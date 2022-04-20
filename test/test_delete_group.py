@@ -1,10 +1,3 @@
-def test_delete_group(app):
-    app.groups.open_group_editor()
-    old_groups = app.groups.get_group_list()
-    if len(old_groups) == 0:
-        app.groups.add_new_group("New Group")
-    app.groups.delete_group(1)
-
 import random
 
 def test_del_group(app):
